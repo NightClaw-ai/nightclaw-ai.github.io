@@ -256,6 +256,25 @@ footer {
 }
 footer a { color: var(--text-sub); text-decoration: none; margin: 0 10px; font-size: 0.85rem; }
 footer p { margin-top: 20px; font-size: 0.8rem; }
+
+/* スティッキーCTA（モバイル用） */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  z-index: 100;
+  display: none;
+}
+@media (max-width: 768px) {
+  .sticky-cta { display: block; }
+}
 </style>
 </head>
 <body>
@@ -331,7 +350,7 @@ footer p { margin-top: 20px; font-size: 0.8rem; }
 <section id="contents">
   <div class="inner">
     <p class="section-label">カリキュラム</p>
-    <h2 class="section-title">全6章の実践マニュアル</h2>
+    <h2 class="section-title">全6章の実踐マニュアル</h2>
     <div class="content-item">
       <div class="icon-wrap">
         <svg viewBox="0 0 24 24"><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"/></svg>
@@ -429,23 +448,4 @@ footer p { margin-top: 20px; font-size: 0.8rem; }
 
 <script data-goatcounter="https://nightclaw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
-</html>
-</html>
->マニュアルを手に入れる</a>
-    <div class="price-box">
-      <p class="price-value">3,980円 <span class="price-tax">(税込)</span></p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="inner">
-    <p><a href="/index.html">特定商取引法に基づく表記</a></p>
-    <p>&copy; 2026 NightClaw-ai</p>
-  </div>
-</footer>
-
-<script data-goatcounter="https://nightclaw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
-</html>
 </html>
