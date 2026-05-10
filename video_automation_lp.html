@@ -3,64 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【完全自動】AIエージェントによるショート動画量産システム｜AI Kaetai</title>
+<title>【完全自動】AIエージェントによるショート動画量産システム｜NightClaw</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f9fafb; margin: 0; padding: 0; }
-  .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-  .header { text-align: center; border-bottom: 3px solid #3b82f6; padding-bottom: 20px; margin-bottom: 30px; }
-  .header h1 { color: #1e3a8a; font-size: 2em; margin-bottom: 10px; }
-  .badge { display: inline-block; background: #ef4444; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; margin-bottom: 15px; }
-  .section { margin-bottom: 40px; }
-  .section h2 { color: #2563eb; border-left: 5px solid #2563eb; padding-left: 10px; }
-  .pain-points { background: #fee2e2; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
-  .pain-points ul { list-style-type: none; padding: 0; }
-  .pain-points li { margin-bottom: 10px; font-weight: bold; color: #991b1b; }
-  .pain-points li::before { content: "❌ "; }
-  .solution { background: #dbeafe; padding: 20px; border-radius: 8px; }
-  .cta-btn { display: block; width: 100%; max-width: 400px; margin: 40px auto; padding: 20px; background: #ea580c; color: white; text-align: center; text-decoration: none; font-size: 1.5em; font-weight: bold; border-radius: 50px; transition: 0.3s; box-shadow: 0 10px 20px rgba(234, 88, 12, 0.3); }
-  .cta-btn:hover { background: #c2410c; transform: translateY(-3px); }
-  .price { text-align: center; font-size: 2em; font-weight: bold; color: #1f2937; margin-bottom: 10px; }
+  body { font-family: 'Noto Sans JP', sans-serif; background-color: #f3f4f6; color: #111827; }
+  .gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: linear-gradient(to right, #2563eb, #9333ea); }
+  .cta-button { background: linear-gradient(to right, #ea580c, #dc2626); box-shadow: 0 4px 14px 0 rgba(234, 88, 12, 0.39); transition: all 0.3s ease; }
+  .cta-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(234, 88, 12, 0.23); }
+  .check-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.5rem; }
+  .check-list li::before { content: '✓'; position: absolute; left: 0; color: #16a34a; font-weight: bold; }
 </style>
 </head>
-<body>
-<div class="container">
-  <div class="header">
-    <div class="badge">136のAIツールから導き出した「最適解」</div>
-    <h1>AIエージェントによる<br>ショート動画【完全自動量産】システム</h1>
-    <p>Perplexity × Claude × HeyGen を連携させ、寝ている間にTikTok/YouTube Shortsを生成・投稿する秘密のフロー</p>
-  </div>
+<body class="antialiased">
 
-  <div class="section pain-points">
-    <h2>こんな悩みはありませんか？</h2>
-    <ul>
-      <li>AIで稼げると聞いて始めたが、プロンプトを考えるのに疲れた</li>
-      <li>動画編集ツールを使ってみたが、結局手作業が多くて続かない</li>
-      <li>どのAIツールを組み合わせるのが正解なのか分からない</li>
-      <li>「情報収集・台本作成・動画化」を別々のツールで行い消耗している</li>
-    </ul>
-  </div>
+  <!-- FV (First View) -->
+  <header class="bg-white border-b border-gray-200 pt-16 pb-12 px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-3xl mx-auto">
+      <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-800 text-sm font-bold tracking-wider mb-4 border border-blue-200">136種類のAIツール比較から導き出した「最適解」</span>
+      <h1 class="text-3xl sm:text-5xl font-black mb-6 leading-tight">
+        もう手作業で動画を作るのは<br>終わりにしませんか？<br>
+        <span class="gradient-text">ショート動画【完全自動量産】システム</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-600 mb-8 font-medium">
+        Perplexity × Claude × HeyGen。<br class="hidden sm:block">
+        3つのAIを連携させ、あなたが寝ている間にバズるTikTok/Shortsを生成・投稿する秘密のフローを公開。
+      </p>
+      <a href="https://buy.stripe.com/bJe14ogwn4hp8Gt6BneEo05" class="cta-button block w-full max-w-md mx-auto py-4 px-8 text-white text-xl font-bold rounded-full">
+        今すぐシステムを構築する<br>
+        <span class="text-sm font-normal">特別価格 ¥4,980 (先着20名限定)</span>
+      </a>
+    </div>
+  </header>
 
-  <div class="section">
-    <h2>「単一ツール」では稼げない時代へ</h2>
-    <p>現在、ChatGPTやClaude単体で出力したテキストは、誰がやっても似たような結果になります。2026年現在、本当に収益を上げているのは<strong>「複数の特化型AIをシームレスに連携させたシステム」</strong>を持つ人間だけです。</p>
-    <p>AI Kaetaiのデータベース（136ツール）を徹底比較した結果、現在最も費用対効果が高く、かつ全自動化が可能な<strong>「動画生成フロー」の黄金比</strong>を発見しました。</p>
-  </div>
+  <!-- 共感 (Pain) -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+      <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">こんな「消耗」していませんか？</h2>
+      <ul class="text-lg text-gray-700 space-y-4">
+        <li class="flex items-start"><span class="text-red-500 mr-2 text-xl">❌</span> 毎日「何を発信しようか」ネタ探しで1時間が消える</li>
+        <li class="flex items-start"><span class="text-red-500 mr-2 text-xl">❌</span> ChatGPTに台本を書かせても、人間味がなくてスルーされる</li>
+        <li class="flex items-start"><span class="text-red-500 mr-2 text-xl">❌</span> CapCutなどの編集ツールを開くのが億劫で、結局投稿が続かない</li>
+        <li class="flex items-start"><span class="text-red-500 mr-2 text-xl">❌</span> 次々と新しいAIツールが出るが、どれをどう組み合わせれば稼げるのか分からない</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="section solution">
-    <h2>本教材で手に入る「自動化の設計図」</h2>
-    <ol>
-      <li><strong>【リサーチ自動化】</strong> Perplexity Proを使い、バズるネタを自動収集するプロンプト</li>
-      <li><strong>【台本生成】</strong> Claude 3.5 Sonnetに「視聴維持率を上げるフック」を作らせる特化型指示書</li>
-      <li><strong>【動画化・音声化】</strong> HeyGen（または無料代替ツール）に台本を流し込み、数分で動画化する連携手順</li>
-      <li><strong>【コピペ用データ】</strong> 上記を1クリックで回すための連携スクリプトとAPI活用法</li>
-    </ol>
-  </div>
+  <!-- 権威性・解決策 -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">「単一ツール」ではもう稼げない。<br><span class="text-blue-600">連携フローこそが資産になる。</span></h2>
+      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+        はじめまして。AIツール比較サイト「AI Kaetai」を運営しているNightClawです。<br>
+        これまで136種類以上のAIツールを比較検証してきて、確信したことがあります。<br><br>
+        それは、<strong>「ChatGPTだけ」「動画生成AIだけ」を単体で使っても、他の大勢と同じクオリティのアウトプットしか生まれない</strong>ということです。<br>
+        2026年現在、本当に収益を上げているのは「複数の特化型AIをシームレスに連携させた自分専用のシステム」を持つ人間だけです。
+      </p>
+      
+      <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8">
+        <h3 class="text-xl font-bold text-blue-900 mb-4">本マニュアルで手に入る「黄金の連携フロー」</h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-bold text-gray-800">STEP 1: 情報収集の自動化</h4>
+            <p class="text-gray-600">Perplexity Proを用いて、今トレンドになっているバズネタの「型」を自動で収集・分析させます。</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800">STEP 2: 視聴維持率をハックする台本生成</h4>
+            <p class="text-gray-600">Claude 3.5 Sonnetに、収集したネタから「離脱されない構成」で台本を執筆させる特化型プロンプトを公開。</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800">STEP 3: 動画化・音声化の瞬殺</h4>
+            <p class="text-gray-600">HeyGen（および無料代替ツール）に台本を流し込み、一切の動画編集作業なしで数分で動画を完成させます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="section">
-    <div class="price">特別価格: 4,980円 <span style="font-size:0.5em">(税込)</span></div>
-    <p style="text-align: center; color: #ef4444; font-weight: bold;">※先着20名様限定。定員到達後は9,800円に値上げします。</p>
-    <a href="https://buy.stripe.com/5kQfZigwn29hbSFe3PeEo04" class="cta-btn">今すぐシステムを構築する</a>
-  </div>
-</div>
+  <!-- CTA -->
+  <section class="py-16 px-4 bg-gray-900 text-white text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-black mb-6">AIに「作業」を渡し、「時間」を買う。</h2>
+      <p class="text-xl text-gray-300 mb-10">
+        このシステムを構築すれば、あなたがやることは「最終確認して投稿ボタンを押すだけ」になります。<br>
+        浮いた時間で、さらに新しいビジネスの種を蒔きましょう。
+      </p>
+      
+      <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 max-w-lg mx-auto mb-10">
+        <div class="text-gray-400 font-bold mb-2">通常価格 ¥9,800 のところ</div>
+        <div class="text-5xl font-black text-white mb-2">¥4,980 <span class="text-lg font-normal text-gray-400">税込</span></div>
+        <div class="text-red-400 font-bold text-sm mb-6">※先着20名様限定価格。枠が埋まり次第、定価に戻ります。</div>
+        
+        <a href="https://buy.stripe.com/bJe14ogwn4hp8Gt6BneEo05" class="cta-button block w-full py-4 px-6 text-white text-xl font-bold rounded-xl mb-4">
+          システム設計図を受け取る
+        </a>
+        <p class="text-xs text-gray-500">※Stripeによる安全な決済です。決済完了後、すぐにマニュアル（Webページ）をご覧いただけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white py-8 text-center text-gray-500 text-sm border-t border-gray-200">
+    <p class="mb-2"><a href="/index.html" class="hover:text-gray-800 underline">特定商取引法に基づく表記</a></p>
+    <p>&copy; 2026 NightClaw-ai | AI Kaetai</p>
+  </footer>
+
 </body>
 </html>
